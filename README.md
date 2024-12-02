@@ -1,25 +1,77 @@
-# Jobringer app design using React.js, HTML, CSS, Tailwind CSS, and Framer Motion for animations and smooth scrolling.
-Deployed link:  https://jobringer-nex7.vercel.app/
-![scrnli_hiuvJ2WYzQ806B](https://github.com/user-attachments/assets/9ee2c321-caf5-42a1-8063-e51c3b52720b)
+# Jobringer
 
-Note: filter and serch bar are not working other than that every thing is fine 
+A modern job-seeking platform connecting job seekers with employers.
 
-Tech Stack
+### Deployed Link: https://jobringer-nex7.vercel.app/
+[Visit Jobringer](https://jobringer-nex7.vercel.app/)
+
+![Jobringer Screenshot](https://github.com/user-attachments/assets/9ee2c321-caf5-42a1-8063-e51c3b52720b)
+
+> **Note:** The filter and search bar are not functional at the moment, but all other features are working fine.
+
+---
+
+## Tech Stack
+
 The application relies on the following tools and libraries:
-●	React: Main framework for building the UI and managing component-based architecture.
-●	Zustand: A lightweight state management solution used for managing global application state.
-●	React Dropzone: Provides drag-and-drop file upload functionality for user resume uploads.
-●	React Router: Handles navigation and routing between pages.
-●	React Icons: Supplies icons for UI elements, improving usability and visual appeal.
-________________________________________
-3. Application Flow
-The  application flow is designed to facilitate smooth navigation and ease of use for both job seekers and employers. Here's a detailed look at the main steps in the application:
-General Flow
-1.	Landing Page: The user arrives at the homepage, which introduces the application, highlights popular job listings, and provides quick access to key sections (Job Listings, Employer Profiles, Blog).
-2.	User Registration/Login: To interact with job applications or postings, users need to register or log in. This provides authentication and personalization features.
-3.	Job Listings Page: Job seekers can view, search, and filter job openings based on various criteria (e.g., location, job title).
-4.	Job Details Page: Users can view specific job details and, if interested, apply for the job directly through an application form.
-5.	Employer Profile Page: Employers can create profiles for their companies and post job openings with specific details.
 
+- **React.js:** Component-based framework for building the UI.
+- **Tailwind CSS:** Utility-first CSS framework for styling and responsive design.
+- **Framer Motion:** Animation library for smooth scrolling and effects.
+- **Zustand:** Lightweight state management for global app state.
+- **React Dropzone:** Provides drag-and-drop file upload functionality.
+- **React Router:** Manages navigation and routing between pages.
+- **React Icons:** Supplies icons for enhancing usability and visual appeal.
 
+---
 
+## Application Features
+
+### General Flow
+
+1. **Landing Page:**  
+   - Introduction to the application.  
+   - Highlights popular job listings.  
+   - Provides quick access to key sections (e.g., Job Listings, Employer Profiles, Blog).
+
+2. **User Registration/Login:**  
+   - Authentication and personalization for users.
+
+3. **Job Listings Page:**  
+   - Allows job seekers to view, search, and filter job openings.
+
+4. **Job Details Page:**  
+   - Displays specific job information.  
+   - Users can apply directly through the application form.
+
+5. **Employer Profile Page:**  
+   - Employers can create company profiles and post job opportunities.  
+   - Detailed job descriptions for seekers to review and apply.
+
+---
+
+## Installation and Setup
+
+Follow these steps to set up the project locally:
+
+### Prerequisites
+
+- Node.js and npm should be installed on your system.
+
+### Steps
+
+```bash
+# Clone the repository
+git clone https://github.com/RounitSingh/Jobringer.git
+
+# Navigate into the project directory
+cd Jobringer
+
+# Install dependencies
+npm install
+
+# Build the app for production
+npm run build
+
+# Start the development server
+npm start
