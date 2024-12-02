@@ -33,7 +33,7 @@
 import React, { useState } from "react";
 import "./Nav.css";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import logo from "./Asset/logo1.jpg";
+// import logo from "./Asset/logo1.jpg";
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -65,8 +65,8 @@ const Nav = () => {
     <div>
       <nav className="navbar">
         <div className="navbar-logo">
-          <img src={logo} alt="JobHunt Logo" />
-          <div className="l-n"><span>Job</span>hunt</div>
+          
+          <div className="l-n"><span>Job</span>ringer</div>
         </div>
         <div
           className="hamburger"

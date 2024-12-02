@@ -18,8 +18,8 @@ const Application = () => {
           <p>Bengaluru</p>
         </div>
         <div className="A-card-actions">
-          <FontAwesomeIcon icon={faEllipsisH} className="action-icon" />
-          <FontAwesomeIcon icon={faBookmark} className="action-icon" />
+          <FontAwesomeIcon icon={faEllipsisH} className="action-icon1" />
+          <FontAwesomeIcon icon={faBookmark} className="action-icon1" />
           <button className="apply-btn">Apply on employer site</button>
         </div>
       </div>

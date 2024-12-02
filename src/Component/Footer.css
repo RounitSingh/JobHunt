@@ -34,7 +34,7 @@
   }
   
   .ft-1 span {
-    color: #f60838;
+    color:#ffd149;
     font-weight:600;
   }
   
@@ -53,20 +53,20 @@
   .footer-icons i {
     padding: 0.4rem 0.5rem;
     background: #e1e1e1;
-    color: #f60838;
+    color:#ffd149;
     margin: 0 0.5rem;
     border-radius: 50%;
   }
   
   .footer-icons i:hover {
-    background: #f60838;
+    background:#ffd149;
     color: #fff;
     transition: 0.6s;
     cursor: pointer;
   }
   
   .Footer h5 {
-    color: #f60838;
+    color:#ffd149;
   }
   
   .ft-2 ul {
@@ -178,7 +178,7 @@
 }
 
 .ft-1 span {
-  color: #f60838;
+  color:#ffd149;
   font-weight: 600;
 }
 
@@ -197,20 +197,20 @@
 .footer-icons i {
   padding: 0.4rem 0.5rem;
   background: #e1e1e1;
-  color: #f60838;
+  color:#ffbf00;
   margin: 0 0.5rem;
   border-radius: 50%;
 }
 
 .footer-icons i:hover {
-  background: #f60838;
+  background:#ffbf00;
   color: #fff;
   transition: 0.6s;
   cursor: pointer;
 }
 
 .Footer h5 {
-  color: #f60838;
+  color:#ffd149;
 }
 
 .ft-2 ul {

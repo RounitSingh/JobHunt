@@ -1,13 +1,21 @@
 // src/components/JobCard.js
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./JobCard.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShareAlt, faStar, faEllipsisH, faCheck } from '@fortawesome/free-solid-svg-icons';
+import { FaShareAlt, FaStar, FaEllipsisH } from 'react-icons/fa';
 import PopupModal from './PopupModal';
 import useJobStore from '../../Store/useJobStore';
 
 const JobCard = ({ job }) => {
+ 
   const { popupVisible, setPopupVisible } = useJobStore();
+  const handleButtonClick = () => {
+    
+   
+    setPopupVisible(true);
+
+  };
 
   const {
     companyLogo = "https://via.placeholder.com/50",
@@ -26,9 +34,10 @@ const JobCard = ({ job }) => {
       <div className="job-card-header">
         <img src={companyLogo} alt={title} className="company-logo" />
         <div className="job-card-actions">
-          <FontAwesomeIcon icon={faShareAlt} className="action-icon" />
-          <FontAwesomeIcon icon={faStar} className="action-icon" />
-          <FontAwesomeIcon icon={faEllipsisH} className="action-icon" />
+        <FaShareAlt className="action-icon" />
+        <FaStar className="action-icon" />
+        <FaEllipsisH className="action-icon" />
+        
         </div>
       </div>
       <div className="job-details">
@@ -41,7 +50,7 @@ const JobCard = ({ job }) => {
             <span className="label">No labels</span>
           )}
         </div>
-        <h3>{title}</h3>
+        <h2>{title}</h2>
         <div className="job-info">
           <span>🌏{location}</span>
           <span>⏰{time}</span>
@@ -62,9 +71,9 @@ const JobCard = ({ job }) => {
       </div>
       <div className="job-card-footer">
         <span className="salary">{salary}</span>
-        <button onClick={()=>setPopupVisible(true)} className="view-job-btn">Apply</button>
+        <button onClick={handleButtonClick} className="view-job-btn">Apply</button>
       </div>
-      <div className="expand-details">Expand details ⬇️</div>
+
     </div>
     {popupVisible && <><PopupModal/></>}
     </>

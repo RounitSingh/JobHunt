@@ -19,7 +19,7 @@ function App() {
     
       <div>
       <Routes>
-      <Route path="/" element={<Main />} />
+      
       <Route path="/jobs-list" element={<><JobsPage/></>} />
       <Route path="/emp-prof" element={<EmployerProfileForm/>} />
       

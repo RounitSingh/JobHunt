@@ -1,0 +1,192 @@
+/* General Styles */
+.j-page-main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Search Section */
+.search-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 30px;
+  background: #303030;
+  border: 1px solid #1c1c1c;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 11px 5px rgba(0, 0, 0, 0.4);
+}
+
+.search-bar {
+  flex: 1;
+  padding: 11px;
+  max-width: 400px;
+  min-width: 200px;
+  background-color: #c5c5c5;
+  color: #141414;
+  font-weight: 530;
+  border: 1px solid black;
+  border-radius: 7px;
+  font-size: 18px;
+  box-shadow: 4px 5px 0px rgba(0, 0, 0, 1);
+  outline: none;
+  transition: border 0.1s ease-in-out;
+}
+
+.search-bar:hover {
+  border: 2px solid #ffd149;
+}
+
+.search-btn {
+  padding: 13px 25px;
+  background: #ffd149;
+  font-weight: bold;
+  font-size: 15px;
+  border: 1px solid #2d2d2d;
+  border-radius: 7px;
+  color: black;
+  text-transform: uppercase;
+  box-shadow: 4px 5px 0px black;
+  transition: transform 0.1s ease-in-out;
+}
+
+.search-btn:hover {
+  transform: scale(1.05);
+}
+
+.search-btn:active {
+  transform: translate(4px, 4px);
+  box-shadow: none;
+}
+
+/* Filter Title */
+.filter-title-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 21px;
+  font-weight: 750;
+  margin-top: 1rem;
+}
+
+.filter-title-div h2 {
+  color: #ffcd39;
+}
+
+/* Layout Styles */
+.jobs-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Filter Section */
+.filter-section {
+  flex: 1;
+  background: #303030;
+  box-shadow: 10px 12px 6px rgba(0, 0, 0, 0.4);
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+/* Jobs Section */
+.jobs-section {
+  flex: 2;
+  background: #303030;
+  box-shadow: 11px 13px 7px rgba(0, 0, 0, 0.4);
+  border: 1px solid black;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* Info Divs */
+.jobs-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card-nav {
+  flex: 1;
+  padding: 25px 15px;
+  background: #ffcd39;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 750;
+  border: 1px solid #0b0b0b;
+  border-radius: 10px;
+  box-shadow: 9px 10px 0px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+.card-nav:hover {
+  transform: scale(1.05);
+  background: #ffd149;
+}
+
+.card-nav:active {
+  transform: translate(4px, 4px);
+  box-shadow: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .search-section {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+
+  .jobs-layout {
+    flex-direction: column;
+  }
+
+  .jobs-info {
+    flex-direction: column;
+  }
+
+  .filter-section,
+  .jobs-section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .jobs-layout {
+    flex-direction: row;
+  }
+
+  .filter-section {
+    width: 30%;
+  }
+
+  .jobs-section {
+    width: 65%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .jobs-layout {
+    flex-direction: row;
+  }
+
+  .filter-section {
+    width: 25%;
+  }
+
+  .jobs-section {
+    width: 70%;
+  }
+}

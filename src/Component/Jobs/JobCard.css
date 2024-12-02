@@ -6,16 +6,28 @@
     display: flex;
     align-items: center;
     padding: 20px;
-    background-color: #ffffff;
+    background-color:#6d6d6d;
     border-radius: 16px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 12px  rgba(0, 0, 0, 0.5);
     width: 700px;
     max-width: 100%;
-    margin: 20px auto;
+    margin: 25px auto;
     font-family: "Helvetica Neue", Arial, sans-serif;
-    color: #333;
+    color:#222222;
     position: relative;
+    transition: 0.1s ease-in-out;
+    border: 1px solid #1b1b1b;
   }
+  .job-card:hover{
+    transform: scale(1.05);
+    border: 2px solid #ffd149 ;
+ 
+  }
+  /* .job-card:active {
+    transform: translateX(8px) translateY(8px);
+    border-radius: 16px;
+    box-shadow: none;
+  } */
   
   /* Header section */
   .job-card-header {
@@ -28,7 +40,7 @@
     width: 48px;
     height: 48px;
     border-radius: 8px;
-    background-color: #e8f4fd;
+    background-color: transparent;
     margin-right: 10px;
   }
   
@@ -41,13 +53,13 @@
   }
   
   .action-icon {
-    color: #666666;
-    font-size: 16px;
+    color: #d1d1d1;
+    font-size: 19px;
     cursor: pointer;
   }
   
   .action-icon:hover {
-    color: #333333;
+    color:#3d3d3d;
   }
   
   /* Labels section */
@@ -63,7 +75,7 @@
     border-radius: 12px;
     font-size: 12px;
     font-weight: 600;
-    color: #ffffff;
+    color: #f6f6f6;
   }
   
   .label.urgent {
@@ -89,19 +101,20 @@
     flex-grow: 1;
   }
   
-  .job-details h3 {
-    margin: 0;
-    font-size: 18px;
-    font-weight: bold;
-    color: #333333;
+  .job-details h2 {
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight:750;
+    color:#222222;
   }
   
   .job-info {
     display: flex;
     gap: 8px;
     margin-top: 4px;
+    font-weight: bold;
     font-size: 14px;
-    color: #666666;
+    color: #222222;
   }
   
   /* Match and Skills Section */
@@ -115,23 +128,23 @@
   
   .match-text {
     font-weight: 600;
-    color: #43a047;
+    color: #ffe149;
   }
   
   .skill-badge {
     display: inline-flex;
     align-items: center;
-    background-color: #e0f5e9;
+    background-color: #fff3c6;
     padding: 4px 10px;
     border-radius: 8px;
     font-size: 12px;
-    color: #1b5e20;
+    color: #222222;
     font-weight: 500;
   }
   
   .skill-badge .fa-check {
     margin-right: 4px;
-    color: #43a047;
+    color: #dd7302;
   }
   
   /* Footer Section */
@@ -145,23 +158,54 @@
   .salary {
     font-size: 18px;
     font-weight: bold;
-    color: #333333;
+    color:#222222;
   }
   
   .view-job-btn {
-    background-color: #333333;
-    color: #ffffff;
+    border-radius: 0.375rem;
+    border: 1px solid #2d2d2d;
+    background-color: #ffd149;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+     font-size: 14px;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    color: black;
+    transition: all 0.3s ease;
+    transform: translateX(4px) translateY(4px);
+    box-shadow: 4px 5px 0px black;
+    transition: 0.1s ease-in-out;
+  }
+  
+  .view-job-btn:hover {
+    transform: scale(1.05);
+    border-radius: 0.375rem;
+  
+  }
+  
+  .view-job-btn:active {
+    transform: translateX(8px) translateY(8px);
+    border-radius: 0.375rem;
+    box-shadow: none;
+  }
+  
+
+  /* .view-job-btn {
+    background-color:#ffd149;
+    color:#2d2d2d;
+    font-weight: bold;
+     font-size: 14px;
     padding: 8px 16px;
     border-radius: 8px;
     border: none;
     cursor: pointer;
     font-size: 14px;
-  }
+  } */
   
   /* Expand Details */
   .expand-details {
     font-size: 14px;
-    color: #666666;
+    color: #222222;
     position: absolute;
     bottom: 8px;
     right: 16px;
@@ -170,73 +214,188 @@
   }
   
   /* Responsive Design */
-  @media (max-width: 768px) {
-    .job-card {
-      flex-direction: column;
-      padding: 16px;
-    }
-  
-    .job-card-header {
-      margin-right: 0;
-      margin-bottom: 8px;
-    }
-  
-    .company-logo {
-      width: 40px;
-      height: 40px;
-    }
-  
-    .job-details h3 {
-      font-size: 16px;
-    }
-  
-    .job-info {
-      font-size: 12px;
-    }
-  
-    .match-info {
-      font-size: 12px;
-    }
-  
-    .skill-badge, .tag {
-      font-size: 11px;
-      padding: 3px 6px;
-    }
-  
-    .job-card-footer {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .salary {
-      font-size: 16px;
-    }
-  
-    .view-job-btn {
-      font-size: 13px;
-    }
+  /* Responsive Design - Mobile and Tablet Views Only */
+@media (max-width: 1024px) {
+  /* General styling for mobile and tablet views */
+
+  /* Main card container */
+  .job-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #6d6d6d;
+    border-radius: 16px;
+    box-shadow: 10px 12px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 700px;
+    margin: 25px auto;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #222222;
+    position: relative;
+    transition: 0.1s ease-in-out;
+    border: 1px solid #1b1b1b;
   }
-  
-  @media (max-width: 480px) {
-    .job-card {
-      padding: 12px;
-    }
-  
-    .job-details h3 {
-      font-size: 14px;
-    }
-  
-    .job-info {
-      font-size: 11px;
-    }
-  
-    .salary {
-      font-size: 14px;
-    }
-  
-    .view-job-btn {
-      font-size: 12px;
-      padding: 6px 10px;
-    }
+
+  .job-card:hover {
+    transform: scale(1.05);
+    border: 2px solid #ffd149;
   }
-  
+
+  /* Header section */
+  .job-card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .company-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: transparent;
+    margin-right: 10px;
+  }
+
+  .job-card-actions {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    gap: 12px;
+  }
+
+  .action-icon {
+    color: #d1d1d1;
+    font-size: 19px;
+    cursor: pointer;
+  }
+
+  .action-icon:hover {
+    color: #3d3d3d;
+  }
+
+  /* Labels section */
+  .labels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .label {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #f6f6f6;
+  }
+
+  .label.urgent {
+    background-color: rgb(40, 180, 99);
+  }
+
+  .label.new {
+    background-color: #f94144;
+  }
+
+  .label.fulltime {
+    background-color: #a020f0;
+  }
+
+  .label.internship {
+    background-color: #0772ff;
+  }
+
+  /* Job Details Section */
+  .job-details {
+    flex-grow: 1;
+    margin-bottom: 16px;
+  }
+
+  .job-details h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 750;
+    color: #222222;
+  }
+
+  .job-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #222222;
+  }
+
+  /* Match and Skills Section */
+  .match-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+    font-size: 14px;
+  }
+
+  .match-text {
+    font-weight: 600;
+    color: #ffe149;
+  }
+
+  .skill-badge {
+    display: inline-flex;
+    align-items: center;
+    background-color: #fff3c6;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    color: #222222;
+    font-weight: 500;
+  }
+
+  .skill-badge .fa-check {
+    margin-right: 4px;
+    color: #dd7302;
+  }
+
+  /* Footer Section */
+  .job-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .salary {
+    font-size: 16px;
+    font-weight: bold;
+    color: #222222;
+  }
+
+  .view-job-btn {
+    border-radius: 0.375rem;
+    border: 1px solid #2d2d2d;
+    background-color: #ffd149;
+    padding: 8px 16px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: black;
+    transition: all 0.3s ease;
+    transform: translateX(4px) translateY(4px);
+    box-shadow: 4px 5px 0px black;
+  }
+
+  .view-job-btn:hover {
+    transform: scale(1.05);
+  }
+
+  .view-job-btn:active {
+    transform: translateX(8px) translateY(8px);
+    box-shadow: none;
+  }
+}
+
