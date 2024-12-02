@@ -96,14 +96,14 @@ const Nav = () => {
             <button
                
               className="navbar-btn"
-              onClick={ handleAboutClick}
+              
             >
               About
             </button>
           </li>
           <li className="navbar-item">
             <Link
-              to="/jobs-list"
+              to="/"
               className="navbar-link"
               onClick={() => setMenuOpen(false)}
             >

@@ -20,7 +20,7 @@ function App() {
       <div>
       <Routes>
       
-      <Route path="/jobs-list" element={<><JobsPage/></>} />
+      <Route path="/" element={<><JobsPage/></>} />
       <Route path="/emp-prof" element={<EmployerProfileForm/>} />
       
       </Routes>
