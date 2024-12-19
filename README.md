@@ -1,9 +1,11 @@
-# Jobringer
+![image](https://github.com/user-attachments/assets/3b30f778-de14-4cad-a9b8-b900e98dea5b)# Jobringer
 
 A modern job-seeking platform connecting job seekers with employers.
 
-### Deployed Link: https://jobringer-nex7.vercel.app/
+### Deployed Link: https://job-hunt-one-kappa.vercel.app/
 [Visit Jobringer](https://jobringer-nex7.vercel.app/)
+
+![Screenshot 2024-12-19 081709](https://github.com/user-attachments/assets/7cd3b78e-1a35-429a-8bc2-3cfd59c72747)
 
 ![Jobringer Screenshot](https://github.com/user-attachments/assets/9ee2c321-caf5-42a1-8063-e51c3b52720b)
 
