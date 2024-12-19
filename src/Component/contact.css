@@ -3,12 +3,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 2.5rem;
+ 
+  background-color: blanchedalmond;
 }
 
 .c h1 {
   color: #333; /* Darker color for better contrast */
   text-align: center;
+  margin-top: 2.5rem;
   margin-bottom: 3rem; /* Reduced for better spacing */
   font-size: 2.5rem; /* Larger font size for emphasis */
   font-weight: bold;

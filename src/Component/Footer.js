@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6 col-lg-5 col-12 ft-1">
-                            <h3><span>JOB</span>Ringer</h3>
+                            <h3><span>JOB</span>Hunt</h3>
                             <p>Connecting Employers With Job Seekers</p>
                             <div className="footer-icons">
                                 <i class="fa-brands fa-facebook"></i>
@@ -22,13 +22,14 @@ const Footer = () => {
                             <ul>
                             
                                 <li className="nav-item">
-                                    <Link className="" to="/jobs-list">Home</Link>
+                                    <Link className="" to="/">Home</Link>
+
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="" >About</Link>
+                                    <Link className="" to="/">About</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="" to="/jobs-list">Jobs</Link>
+                                    <Link className="" to="/jobs">Jobs</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link className="" to="/emp-prof">Employer Profiles</Link>

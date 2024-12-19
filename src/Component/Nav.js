@@ -50,7 +50,7 @@ const Nav = () => {
   const handleAboutClick = () => {
     setMenuOpen(false);
     if (location.pathname !== "/") {
-      navigate("/", { replace: true });
+      navigate("/",  { replace: true });
     }
     // Adding a slight delay to allow the navigation to home to complete
     setTimeout(() => scrollToSection("about"), 10);
@@ -66,7 +66,7 @@ const Nav = () => {
       <nav className="navbar">
         <div className="navbar-logo">
           
-          <div className="l-n"><span>Job</span>ringer</div>
+          <div className="l-n"><span>Job</span>Hunt</div>
         </div>
         <div
           className="hamburger"
@@ -96,6 +96,7 @@ const Nav = () => {
             <button
                
               className="navbar-btn"
+              onClick={handleAboutClick}
               
             >
               About
@@ -103,7 +104,7 @@ const Nav = () => {
           </li>
           <li className="navbar-item">
             <Link
-              to="/"
+              to="/jobs"
               className="navbar-link"
               onClick={() => setMenuOpen(false)}
             >

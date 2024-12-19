@@ -2,7 +2,8 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  flex-direction: row; /* Ensure row layout on larger screens */
+  flex-direction: row;
+  background-color: blanchedalmond; /* Ensure row layout on larger screens */
 }
 
 .a-left {
